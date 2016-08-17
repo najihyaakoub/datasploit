@@ -13,7 +13,8 @@ class style:
    BOLD = '\033[1m'
    END = '\033[0m'
 
-
+if len(sys.argv) < 2 :
+	sys.exit("[-] No argument passed. \nUsage: domainOsint.py [options]\n\nOptions:\n  -h,\t\t--help\t\t\tshow this help message and exit\n  -d DOMAIN,\t--domain=DOMAIN\t\tDomain name against which automated Osint is to be performed.")
 email = sys.argv[1]
 username_list = []
 
